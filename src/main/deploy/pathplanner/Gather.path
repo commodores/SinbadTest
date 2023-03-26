@@ -1,0 +1,213 @@
+{
+  "waypoints": [
+    {
+      "anchorPoint": {
+        "x": 1.8601197846402857,
+        "y": 0.501912273949772
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.860119784640286,
+        "y": 0.501912273949772
+      },
+      "holonomicAngle": 180.0,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    },
+    {
+      "anchorPoint": {
+        "x": 4.584786414653331,
+        "y": 0.73135788489824
+      },
+      "prevControl": {
+        "x": 3.5847864146533306,
+        "y": 0.73135788489824
+      },
+      "nextControl": {
+        "x": 5.584786414653331,
+        "y": 0.73135788489824
+      },
+      "holonomicAngle": 163.810793742973,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    },
+    {
+      "anchorPoint": {
+        "x": 6.17656534060832,
+        "y": 0.9177824437938686
+      },
+      "prevControl": {
+        "x": 5.187081143393057,
+        "y": 0.8173999890039142
+      },
+      "nextControl": {
+        "x": 7.166049537823584,
+        "y": 1.018164898583823
+      },
+      "holonomicAngle": 0,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    },
+    {
+      "anchorPoint": {
+        "x": 5.732014469395665,
+        "y": 1.0325052492681022
+      },
+      "prevControl": {
+        "x": 7.094347784402188,
+        "y": 1.0181648985838232
+      },
+      "nextControl": {
+        "x": 4.369681154389142,
+        "y": 1.0468455999523811
+      },
+      "holonomicAngle": 165.52970589993416,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    },
+    {
+      "anchorPoint": {
+        "x": 6.692817965242371,
+        "y": 1.8785859396405744
+      },
+      "prevControl": {
+        "x": 6.305628496766833,
+        "y": 1.2906315615851283
+      },
+      "nextControl": {
+        "x": 7.08000743371791,
+        "y": 2.466540317696021
+      },
+      "holonomicAngle": 29.744881296942147,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    },
+    {
+      "anchorPoint": {
+        "x": 5.4,
+        "y": 1.1185473533737775
+      },
+      "prevControl": {
+        "x": 5.722657890396283,
+        "y": 0.9536333205045671
+      },
+      "nextControl": null,
+      "holonomicAngle": 180.0,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    }
+  ],
+  "maxVelocity": null,
+  "maxAcceleration": 2.0,
+  "isReversed": null,
+  "markers": [
+    {
+      "position": 1.0454545454545456,
+      "names": [
+        "groundAuto"
+      ]
+    },
+    {
+      "position": 1.8181818181818186,
+      "names": [
+        "runIntake"
+      ]
+    },
+    {
+      "position": 2.681818181818181,
+      "names": [
+        "stopIntake"
+      ]
+    },
+    {
+      "position": 2.7272727272727266,
+      "names": [
+        "stowAuto"
+      ]
+    },
+    {
+      "position": 3.1818181818181785,
+      "names": [
+        "release"
+      ]
+    },
+    {
+      "position": 3.4545454545454497,
+      "names": [
+        "groundAuto"
+      ]
+    },
+    {
+      "position": 3.727272727272721,
+      "names": [
+        "runIntake"
+      ]
+    },
+    {
+      "position": 4.227272727272718,
+      "names": [
+        "stopIntake"
+      ]
+    },
+    {
+      "position": 4.318181818181809,
+      "names": [
+        "stowAuto"
+      ]
+    },
+    {
+      "position": 3.4545454545454497,
+      "names": [
+        "stopIntake"
+      ]
+    }
+  ]
+}

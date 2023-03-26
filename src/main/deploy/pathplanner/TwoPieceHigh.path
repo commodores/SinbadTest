@@ -1,0 +1,124 @@
+{
+  "waypoints": [
+    {
+      "anchorPoint": {
+        "x": 1.8778355388379817,
+        "y": 5.054472419929148
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.0880738755116455,
+        "y": 5.054472419929148
+      },
+      "holonomicAngle": 180.0,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    },
+    {
+      "anchorPoint": {
+        "x": 4.347894458984353,
+        "y": 4.79
+      },
+      "prevControl": {
+        "x": 4.0122973744851125,
+        "y": 4.79
+      },
+      "nextControl": {
+        "x": 4.6452163660390084,
+        "y": 4.79
+      },
+      "holonomicAngle": 180.0,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    },
+    {
+      "anchorPoint": {
+        "x": 6.8,
+        "y": 4.7
+      },
+      "prevControl": {
+        "x": 6.419867763513536,
+        "y": 4.7
+      },
+      "nextControl": {
+        "x": 7.180132236486464,
+        "y": 4.7
+      },
+      "holonomicAngle": 0,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    },
+    {
+      "anchorPoint": {
+        "x": 2.0,
+        "y": 4.425522231928914
+      },
+      "prevControl": {
+        "x": 3.6581414047278864,
+        "y": 5.054472419929148
+      },
+      "nextControl": null,
+      "holonomicAngle": 180.0,
+      "isReversal": false,
+      "velOverride": null,
+      "isLocked": false,
+      "isStopPoint": false,
+      "stopEvent": {
+        "names": [],
+        "executionBehavior": "parallel",
+        "waitBehavior": "none",
+        "waitTime": 0
+      }
+    }
+  ],
+  "markers": [
+    {
+      "position": 0.6763636363636288,
+      "names": [
+        "groundAuto"
+      ]
+    },
+    {
+      "position": 1.4254545454544816,
+      "names": [
+        "runIntake"
+      ]
+    },
+    {
+      "position": 2.2981818181817046,
+      "names": [
+        "stopIntake"
+      ]
+    },
+    {
+      "position": 2.269090909090807,
+      "names": [
+        "stowAuto"
+      ]
+    }
+  ]
+}
