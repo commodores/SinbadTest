@@ -77,7 +77,7 @@ public class Elevator extends SubsystemBase {
 		// elevatorA.burnFlash();
 		elevator.burnFlash();
 
-    encoder.setPositionConversionFactor(ElevatorConstants.elevatorInchesToNeoRotationsFactor);
+    	encoder.setPositionConversionFactor(ElevatorConstants.elevatorInchesToNeoRotationsFactor);
 
 		controller.setTolerance(3);
 		profiledController.setTolerance(3);

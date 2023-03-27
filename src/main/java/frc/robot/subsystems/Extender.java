@@ -76,7 +76,7 @@ public class Extender extends SubsystemBase {
 		// extenderA.burnFlash();
 		extender.burnFlash();
 
-    encoder.setPositionConversionFactor(ExtenderConstants.extenderInchesToNeoRotationsFactor);
+    	encoder.setPositionConversionFactor(ExtenderConstants.extenderInchesToNeoRotationsFactor);
 
 		controller.setTolerance(3);
 		profiledController.setTolerance(3);
@@ -145,7 +145,7 @@ public class Extender extends SubsystemBase {
 				setExtenderClosedLoop(false);
 				break;
 			case MANUAL:
-				setExtenderOpenLoop(-RobotContainer.driverTwo.getLeftY());
+				setExtenderOpenLoop(-RobotContainer.driverTwo.getLeftX());
 				break;
 			case POSITION:
 				setExtenderClosedLoop(true);

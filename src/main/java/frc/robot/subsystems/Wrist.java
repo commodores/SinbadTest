@@ -145,7 +145,7 @@ public class Wrist extends SubsystemBase {
 				setWristClosedLoop(false);
 				break;
 			case MANUAL:
-				setWristOpenLoop(-RobotContainer.driverTwo.getLeftY());
+				setWristOpenLoop(-RobotContainer.driverTwo.getRightY());
 				break;
 			case POSITION:
 				setWristClosedLoop(true);

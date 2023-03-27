@@ -11,7 +11,10 @@ import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.commands.swerve.TeleopSwerve;
+import frc.robot.commands.wrist.SetWristManualOverride;
 import frc.robot.commands.elevator.*;
+import frc.robot.commands.extender.ActuateExtenderToSetpoint;
+import frc.robot.commands.extender.SetExtenderManualOverride;
 import frc.robot.subsystems.*;
 
 /**
@@ -144,7 +147,12 @@ public class RobotContainer {
         //groundCube.onTrue(new GroundAuto(m_Extender, m_Elevator, m_Wrist));//---Right Stick Button
 
         shelf.toggleOnTrue(new SetElevatorManualOverride());
+        shelf.toggleOnTrue(new SetExtenderManualOverride());
+        shelf.toggleOnTrue(new SetWristManualOverride());
+
+
         high.onTrue(new ActuateElevatorToSetpoint(10, 1));
+        mid.onTrue(new ActuateExtenderToSetpoint(10, 1));
 
         
     }
