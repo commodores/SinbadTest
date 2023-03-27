@@ -177,7 +177,7 @@ public final class Constants {
 
         public static final int elevatorMotorID = 14;
 
-        private final static double gearRatio = 49.5; // 4:1 cartridge + 3:1 cartrdige + 3:1 Cartridge + 1.375
+        private final static double gearRatio = 1/49.5; // 4:1 cartridge + 3:1 cartrdige + 3:1 Cartridge + 1.375
         private final static double winchDia_in = 1.79; // For PWF Arm
         private final static double winchDia_m = Units.inchesToMeters(winchDia_in);
         private final static double winchCircumference_m = winchDia_m * Math.PI;
@@ -186,23 +186,23 @@ public final class Constants {
         public final static double elevatorMetersToNeoRotationsFactor = winchCircumference_m / gearRatio;
         public final static double elevatorMetersVelocityToNeoRotationsFactor = elevatorMetersToNeoRotationsFactor / 60;
         
-        public final static double elevatorInchesToNeoRotationsFactor = winchCircumference_in / gearRatio;
+        public final static double elevatorInchesToNeoRotationsFactor = winchCircumference_in * gearRatio;
         public final static double elevatorInchesVelocityToNeoRotationsFactor = elevatorInchesToNeoRotationsFactor / 60;
 
         //FeedForward Gains
-        public static final double elevatorKs = 0;
-        public static final double elevatorKg = 0;
-        public static final double elevatorKv = 0;
-        public static final double elevatorKa = 0;
+        public static final double elevatorKs = 0.4;
+        public static final double elevatorKg = 0.0;
+        public static final double elevatorKv = 0.0;
+        public static final double elevatorKa = 0.0;
 
         //PID Controller
-        public static final double elevatorKp = 0;
+        public static final double elevatorKp = .9;
         public static final double elevatorKi = 0;
         public static final double elevatorKd = 0;
 
         //Constraints
-        public static final double elevatorMaxVel = 0;
-        public static final double elevatorMaxAccel = 0;
+        public static final double elevatorMaxVel = 30;
+        public static final double elevatorMaxAccel = 30;
     }
 
     public static final class IntakeConstants {

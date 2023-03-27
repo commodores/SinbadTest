@@ -131,10 +131,10 @@ public class Elevator extends SubsystemBase {
 				setElevatorClosedLoop(false);
 				break;
 			case MANUAL:
-				setElevatorOpenLoop(RobotContainer.driverTwo.getLeftY());
+				setElevatorOpenLoop(-RobotContainer.driverTwo.getLeftY());
 				break;
 			case POSITION:
-				setElevatorClosedLoop(false);
+				setElevatorClosedLoop(true);
 				break;
 		}
 	}
