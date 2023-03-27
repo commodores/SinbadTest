@@ -12,9 +12,9 @@ import com.pathplanner.lib.auto.SwerveAutoBuilder;
 
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
-import frc.robot.commands.AutoCommands.AutoBalanceCommand;
-import frc.robot.commands.AutoCommands.AutoLock;
-import frc.robot.commands.AutoCommands.Nothing;
+import frc.robot.commands.autoCommands.AutoBalanceCommand;
+import frc.robot.commands.autoCommands.AutoLock;
+import frc.robot.commands.autoCommands.Nothing;
 import frc.robot.subsystems.*;;
 
 public class AutoCommands {

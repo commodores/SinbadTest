@@ -126,7 +126,7 @@ public class Wrist extends SubsystemBase {
 	}
 
 	public void resetEncoder(){
-		encoder.setPosition(0);
+		encoder.setPosition(8);
 	}
 
 	public boolean getLimitSwitch(){
