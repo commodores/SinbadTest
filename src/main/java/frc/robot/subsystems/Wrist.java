@@ -117,8 +117,8 @@ public class Wrist extends SubsystemBase {
 		setpointWrist = setpoint;
 	}
 
-	public boolean isAtSetpoint(boolean isProfiled, double tolerance) {
-		return Math.abs((setpointWrist - encoder.getPosition())) <= tolerance;
+	public boolean isAtSetpoint(boolean isProfiled) {
+		return Math.abs((setpointWrist - encoder.getPosition())) <= 5;
 	}
 
 	public double getPosition() {

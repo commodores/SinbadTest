@@ -33,6 +33,6 @@ public class ActuateWristStow extends CommandBase {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return RobotContainer.m_Wrist.isAtSetpoint(false, tolerance);
+    return RobotContainer.m_Wrist.isAtSetpoint(false);
   }
 }

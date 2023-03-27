@@ -13,10 +13,9 @@ public class ActuateWristToSetpoint extends CommandBase {
 
   double setpoint = 0;
   double tolerance = 0;
-  public ActuateWristToSetpoint(double setpoint, double tolerance) {
+  public ActuateWristToSetpoint(double setpoint) {
     addRequirements(RobotContainer.m_Wrist);
     this.setpoint = setpoint;
-    this.tolerance = tolerance;
   }
 
   // Called when the command is initially scheduled.
@@ -39,6 +38,6 @@ public class ActuateWristToSetpoint extends CommandBase {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return RobotContainer.m_Wrist.isAtSetpoint(false, tolerance);
+    return RobotContainer.m_Wrist.isAtSetpoint(false);
   }
 }
