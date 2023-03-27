@@ -10,8 +10,7 @@ import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
-import frc.robot.commands.Swerve.TeleopSwerve;
+import frc.robot.commands.swerve.TeleopSwerve;
 import frc.robot.subsystems.*;
 
 /**
@@ -33,8 +32,8 @@ public class RobotContainer {
     private final AutoCommands autos;    
 
     /* Controllers */
-    private final XboxController driver = new XboxController(0);
-    private final XboxController driverTwo = new XboxController(1);
+    public final static XboxController driver = new XboxController(0);
+    public final static XboxController driverTwo = new XboxController(1);
 
     /* Drive Controls */
     private final int translationAxis = XboxController.Axis.kLeftY.value;
