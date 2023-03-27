@@ -21,19 +21,23 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants.ElevatorConstants;
 import frc.robot.RobotContainer;
 
+import edu.wpi.first.wpilibj.DigitalInput;
+
 public class Elevator extends SubsystemBase {
 
 	public enum ElevatorState {
-		IDLE,
+		STOW,
 		MANUAL,
 		POSITION
 	}
 
-	public ElevatorState elevatorState = ElevatorState.IDLE;
+	public ElevatorState elevatorState = ElevatorState.STOW;
 
 	public CANSparkMax elevator = new CANSparkMax(ElevatorConstants.elevatorMotorID, MotorType.kBrushless);
 
 	public RelativeEncoder encoder = elevator.getEncoder();
+	
+	private DigitalInput reverseLimitSwitch = new DigitalInput(1);;
 
 	public ElevatorFeedforward feedForward = new ElevatorFeedforward(
 			ElevatorConstants.elevatorKs,
@@ -62,6 +66,8 @@ public class Elevator extends SubsystemBase {
 		elevator.setIdleMode(IdleMode.kBrake);
 
 		elevator.setInverted(false);
+
+		elevator.setSmartCurrentLimit(50);
 
 		elevator.enableSoftLimit(SoftLimitDirection.kForward, true);
 		elevator.enableSoftLimit(SoftLimitDirection.kReverse, true);
@@ -120,14 +126,23 @@ public class Elevator extends SubsystemBase {
 		return encoder.getPosition();
 	}
 
+	public void resetEncoder(){
+		encoder.setPosition(0);
+	}
+
+	public boolean getLimitSwitch(){
+		return !reverseLimitSwitch.get();
+	}
+
 	@Override
 	public void periodic() {
 		SmartDashboard.putNumber("Elevator Encoder", encoder.getPosition());
 		SmartDashboard.putString("Elevator State", String.valueOf(getState()));
+		SmartDashboard.putBoolean("Elevator Limit", getLimitSwitch());
 
 		switch (elevatorState) {
-			case IDLE:
-				setSetpoint(0);
+			case STOW:
+				setSetpoint(2);
 				setElevatorClosedLoop(false);
 				break;
 			case MANUAL:

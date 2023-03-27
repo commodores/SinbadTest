@@ -27,7 +27,7 @@ public class SetElevatorManualOverride extends CommandBase {
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    RobotContainer.m_Elevator.setState(ElevatorState.IDLE);
+    RobotContainer.m_Elevator.setState(ElevatorState.STOW);
   }
 
   // Returns true when the command should end.

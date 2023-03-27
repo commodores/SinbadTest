@@ -8,10 +8,10 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.RobotContainer;
 import frc.robot.subsystems.Elevator.ElevatorState;
 
-public class ActuateElevatorIdle extends CommandBase {
+public class ActuateElevatorStow extends CommandBase {
   /** Creates a new ActuateElevatorIdle. */
   double tolerance = 0;
-  public ActuateElevatorIdle(double tolerance) {
+  public ActuateElevatorStow(double tolerance) {
     addRequirements(RobotContainer.m_Elevator); 
     this.tolerance = tolerance;
    }
@@ -19,7 +19,7 @@ public class ActuateElevatorIdle extends CommandBase {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-    RobotContainer.m_Elevator.setState(ElevatorState.IDLE);
+    RobotContainer.m_Elevator.setState(ElevatorState.STOW);
   }
 
   // Called every time the scheduler runs while the command is scheduled.

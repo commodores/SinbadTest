@@ -171,13 +171,28 @@ public final class Constants {
 
         public final static double extenderInchesToNeoRotationsFactor = winchCircumference_in / gearRatio;
         public final static double extenderInchesVelocityToNeoRotationsFactor = extenderInchesToNeoRotationsFactor / 60;
+
+        //FeedForward Gains
+        public static final double extenderKs = 0.4;
+        public static final double extenderKg = 0.0;
+        public static final double extenderKv = 0.0;
+        public static final double extenderKa = 0.0;
+
+        //PID Controller
+        public static final double extenderKp = .9;
+        public static final double extenderKi = 0;
+        public static final double extenderKd = 0;
+
+        //Constraints
+        public static final double extenderMaxVel = 30;
+        public static final double extenderMaxAccel = 30;
     }
     
     public static final class ElevatorConstants {
 
         public static final int elevatorMotorID = 14;
 
-        private final static double gearRatio = 1/49.5; // 4:1 cartridge + 3:1 cartrdige + 3:1 Cartridge + 1.375
+        private final static double gearRatio = 49.5; // 4:1 cartridge + 3:1 cartrdige + 3:1 Cartridge + 1.375
         private final static double winchDia_in = 1.79; // For PWF Arm
         private final static double winchDia_m = Units.inchesToMeters(winchDia_in);
         private final static double winchCircumference_m = winchDia_m * Math.PI;
@@ -186,7 +201,7 @@ public final class Constants {
         public final static double elevatorMetersToNeoRotationsFactor = winchCircumference_m / gearRatio;
         public final static double elevatorMetersVelocityToNeoRotationsFactor = elevatorMetersToNeoRotationsFactor / 60;
         
-        public final static double elevatorInchesToNeoRotationsFactor = winchCircumference_in * gearRatio;
+        public final static double elevatorInchesToNeoRotationsFactor = winchCircumference_in / gearRatio;
         public final static double elevatorInchesVelocityToNeoRotationsFactor = elevatorInchesToNeoRotationsFactor / 60;
 
         //FeedForward Gains
@@ -211,6 +226,21 @@ public final class Constants {
 
     public static final class WristConstants {        
         public static final int wristMotorID = 16;
+
+        //FeedForward Gains
+        public static final double wristKs = 0.04;
+        public static final double wristKg = 0.0;
+        public static final double wristKv = 0.0;
+        public static final double wristKa = 0.0;
+
+        //PID Controller
+        public static final double wristKp = .009;
+        public static final double wristKi = 0;
+        public static final double wristKd = 0;
+
+        //Constraints
+        public static final double wristMaxVel = 30;
+        public static final double wristMaxAccel = 30;
     }
 
     public static final class OIConstants {
