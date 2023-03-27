@@ -151,8 +151,8 @@ public class RobotContainer {
         shelf.toggleOnTrue(new SetWristManualOverride());
 
 
-        high.onTrue(new ActuateElevatorToSetpoint(10, 1));
-        mid.onTrue(new ActuateExtenderToSetpoint(10, 1));
+        high.onTrue(new ActuateElevatorToSetpoint(6, 1));
+        mid.onTrue(new ActuateExtenderToSetpoint(6, 1));
 
         
     }
