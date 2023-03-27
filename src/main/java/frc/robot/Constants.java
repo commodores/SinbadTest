@@ -194,7 +194,15 @@ public final class Constants {
         public static final double elevatorKg = 0;
         public static final double elevatorKv = 0;
         public static final double elevatorKa = 0;
-        
+
+        //PID Controller
+        public static final double elevatorKp = 0;
+        public static final double elevatorKi = 0;
+        public static final double elevatorKd = 0;
+
+        //Constraints
+        public static final double elevatorMaxVel = 0;
+        public static final double elevatorMaxAccel = 0;
     }
 
     public static final class IntakeConstants {
