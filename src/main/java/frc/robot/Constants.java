@@ -179,7 +179,7 @@ public final class Constants {
         public static final double extenderKa = 0.0;
 
         //PID Controller
-        public static final double extenderKp = .9;
+        public static final double extenderKp = 0;
         public static final double extenderKi = 0;
         public static final double extenderKd = 0;
 
@@ -211,7 +211,7 @@ public final class Constants {
         public static final double elevatorKa = 0.0;
 
         //PID Controller
-        public static final double elevatorKp = .9;
+        public static final double elevatorKp = 0;
         public static final double elevatorKi = 0;
         public static final double elevatorKd = 0;
 
@@ -234,7 +234,7 @@ public final class Constants {
         public static final double wristKa = 0.0;
 
         //PID Controller
-        public static final double wristKp = .009;
+        public static final double wristKp = 0;
         public static final double wristKi = 0;
         public static final double wristKd = 0;
 
